@@ -7,7 +7,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         // 객체 데이터의 일관성을 유지하기 위해 시작시 생성하고 의존성을 주입하는 패턴 -> DB 사용X
-        VendingMachine vendingmachine = new VendingMachine();
+        Machine vendingmachine = new VendingMachine();
 
         // 두가지 모드 구현 (사용자 모드. 관리자 모드)
         Mode am = new AdminMode(vendingmachine);
